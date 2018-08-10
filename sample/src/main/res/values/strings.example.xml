@@ -1,0 +1,40 @@
+<resources>
+<!-- 
+
+    !!! UNCOMMENT THIS BLOCK !!!
+
+    <string name="app_name">LibWeatherDemo</string>
+
+    <string name="btn_apixu_title">Apixu</string>
+    <string name="btn_dDarksky_title">Darksky</string>
+    <string name="btn_openweathermap_title">OWM</string>
+    <string name="btn_weatherunlocked_title">WU</string>
+    <string name="btn_yahoo_title">Yahoo</string>
+    <string name="btn_yandex_title">Yandex</string>
+
+    <string name="txt_info_title">Weather information</string>
+    <string name="txt_provider">Provider:</string>
+    <string name="txt_temperature">Temperature:</string>
+    <string name="txt_temperature_grad">°C</string>
+    <string name="txt_pressure">Pressure:</string>
+    <string name="txt_pressure_unit">mm Hg</string>
+    <string name="txt_humidity">Humidity:</string>
+    <string name="txt_humidity_unit">%</string>
+    <string name="txt_windspeed">Wind speed:</string>
+    <string name="txt_windspeed_unit">m/s</string>
+    <string name="txt_location">Location:</string>
+
+    <string name="yandex_error">Yandex weather API unsupported now</string>
+
+                                                  
+    <string name="weatherunlocked_weather_app_id">xxxxxxxx</string>
+    <string name="weatherunlocked_weather_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="openweathermap_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="darksky_weather_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="apixu_weather_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="yandex_weather_api_key">xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</string>
+
+    !!! UNCOMMENT THIS BLOCK !!!
+
+-->
+</resources>
