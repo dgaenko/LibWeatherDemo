@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("APP", "Pressure: " + e.getPressure() + "mm Hg");
                 Log.d("APP", "Humidity: " + e.getHumidity() + "%");
                 Log.d("APP", "Wind speed: " + e.getWindSpeed() + "m/s");
+                Log.d("APP", "Status: " + e.isSuccess ? "OK" : "Error");
             }
         });
         // получение инфо о погоде в указанном координатами месте
@@ -62,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
         int module_id = Weather.APIXU;
         weather.getWeatherInfo(module_id, 49.448161, 11.075577);
 ```
+При ошибке получения данных поле WeatherInfo.isSuccess будет иметь значение false.
+
 Запрос информации о погоде будет произведен от указанного в module_id сервис-провайдера. Список значений для выбора провайдера данных:
 ```java
 Weather.APIXU
