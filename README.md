@@ -62,5 +62,14 @@ public class MainActivity extends AppCompatActivity {
         int module_id = Weather.APIXU;
         weather.getWeatherInfo(module_id, 49.448161, 11.075577);
 ```
+Запрос информации о погоде будет произведен от указанного в module_id сервис-провайдера. Список значений для выбора провайдера данных:
+```java
+Weather.APIXU
+Weather.DARKSKY
+Weather.OPENWEATHERMAP
+Weather.WEATHERUNLOCKED
+Weather.YAHOO
+Weather.YANDEX
+```
 
 <img src="https://github.com/dgaenko/LibWeatherDemo/blob/master/sample/screenshot/main.png" width="350"/>
