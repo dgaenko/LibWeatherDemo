@@ -13,7 +13,17 @@
 
 ## Использование
 
-Импортируйте библиотеку как модуль в Ваш проект (File -> New -> Import module...)
++ Импортируйте библиотеку как модуль в Ваш проект (File -> New -> Import module...)
++ В файле ресурсов **strings.xml** добавьте следующие строки с ключами доступа к API провайдеров
+
+```html
+    <string name="weatherunlocked_weather_app_id">xxxxxxxx</string>
+    <string name="weatherunlocked_weather_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="openweathermap_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="darksky_weather_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="apixu_weather_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="yandex_weather_api_key">xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</string>
+```
 
 strings.example.xml
 
