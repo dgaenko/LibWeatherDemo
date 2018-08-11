@@ -16,7 +16,7 @@
 + Импортируйте библиотеку как модуль в Ваш проект (File -> New -> Import module...)
 + В файле ресурсов **strings.xml** добавьте следующие строки с ключами доступа к API провайдеров
 
-```html
+```xml
     <string name="weatherunlocked_weather_app_id">xxxxxxxx</string>
     <string name="weatherunlocked_weather_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
     <string name="openweathermap_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
