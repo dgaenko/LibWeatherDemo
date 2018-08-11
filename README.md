@@ -26,6 +26,7 @@
 ```
 + В приложении для получения данных используйте следующий код:
 ```java
+...
 import ru.familion.lib_weather.*;
 
 public class MainActivity extends AppCompatActivity {
