@@ -55,10 +55,12 @@ public class MainActivity extends AppCompatActivity {
 ```
 Варианты использования:
 ```java
+        weather.getWeatherInfo(49.448161, 11.075577);
+```
+Получает информацию о погоде от провайдеров без конкретизации сервиса. При ошибке получения данных будет производится перебор провадеров с следующем порядке: weatherunlocked.com, openweathermap.org, yahoo.com, darksky.net, apixu.com, yandex.ru.
+```java
         int module_id = Weather.APIXU;
         weather.getWeatherInfo(module_id, 49.448161, 11.075577);
-        
-        weather.getWeatherInfo(49.448161, 11.075577);
 ```
 
 <img src="https://github.com/dgaenko/LibWeatherDemo/blob/master/sample/screenshot/main.png" width="350"/>
