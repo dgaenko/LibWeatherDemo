@@ -3,7 +3,7 @@
 
 | apixu.com | darksky.net | openweathermap.org | weatherunlocked.com | yahoo.com | yandex.ru |
 |:----------------|:---------:|:----------------:|:----------------:|:----------------:|:----------------:|
-| По левому краю | <50 в день | не более 60 в мин | не более 75 в мин,  но не более 25 000 в день | 2000 в день | <50 в день |
+| <10 000 в месяц | <1000 в день | <60 в мин | <75 в мин, <25 000 в день | <2000 в день | <50 в день |
 | текст | текст | текст |
 
 <img src="https://github.com/dgaenko/LibWeatherDemo/blob/master/sample/screenshot/main.png" width="350"/>
