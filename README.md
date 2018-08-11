@@ -26,6 +26,16 @@
 ```
 + В приложении для получения данных используйте следующий код:
 ```java
+import ru.familion.lib_weather.*;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
         Weather weather = new Weather(this);
         weather.addWeatherListener(new WeatherListener() {
             @Override
@@ -35,7 +45,10 @@
                 txtTemperature.setText(e.getTemperature() + " C");
             }
         });
-        weather.getWeatherInfo(latitude, longitude);
+        weather.getWeatherInfo(49.448161, 11.075577);
+        
+    }
+}
 ```
 
 <img src="https://github.com/dgaenko/LibWeatherDemo/blob/master/sample/screenshot/main.png" width="350"/>
