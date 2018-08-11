@@ -53,5 +53,12 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+Варианты использования:
+```java
+        int module_id = Weather.APIXU;
+        weather.getWeatherInfo(, 49.448161, 11.075577);
+        
+        weather.getWeatherInfo(49.448161, 11.075577);
+```
 
 <img src="https://github.com/dgaenko/LibWeatherDemo/blob/master/sample/screenshot/main.png" width="350"/>
