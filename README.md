@@ -41,9 +41,10 @@ public class MainActivity extends AppCompatActivity {
         weather.addWeatherListener(new WeatherListener() {
             @Override
             public void onWeatherReady(WeatherInfo e) {
-                Log.d("APP", "" + e.getTemperature());
-                TextView txtTemperature = findViewById(R.id.txtTemperature);
-                txtTemperature.setText(e.getTemperature() + " C");
+                Log.d("APP", "Temperature: " + e.getTemperature() + "°C");
+                Log.d("APP", "Pressure: " + e.getPressure() + "mm Hg");
+                Log.d("APP", "Humidity: " + e.getHumidity() + "%");
+                Log.d("APP", "Wind speed: " + e.getWindSpeed() + "m/s");
             }
         });
         weather.getWeatherInfo(49.448161, 11.075577);
