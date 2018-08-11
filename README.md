@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         int module_id = Weather.APIXU;
         weather.getWeatherInfo(module_id, 49.448161, 11.075577);
 ```
-При ошибке получения данных поле WeatherInfo.isSuccess будет иметь значение false.
+При ошибке получения данных поле **WeatherInfo.isSuccess** будет иметь значение false.
 
 Запрос информации о погоде будет произведен от указанного в module_id сервис-провайдера. Список значений для выбора провайдера данных:
 ```java
@@ -74,5 +74,11 @@ Weather.WEATHERUNLOCKED
 Weather.YAHOO
 Weather.YANDEX
 ```
+
+## Разрешения и библиотеки
+
+Для запросов к провайдерам данных используется библиотека **com.android.volley** требуется разрешение **android.permission.INTERNET**, которое уже добавлено в манифест библиотеки.
+
+## Скриншот примера приложения
 
 <img src="https://github.com/dgaenko/LibWeatherDemo/blob/master/sample/screenshot/main.png" width="350"/>
