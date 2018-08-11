@@ -102,6 +102,7 @@ public class WeatherModuleDarksky extends WeatherModule {
                 } // Response.ErrorListener
                 // endregion
         );
+        stringRequest.setShouldCache(false);
         queue.add(stringRequest);
     }
 

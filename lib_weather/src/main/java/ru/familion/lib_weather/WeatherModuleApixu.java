@@ -102,6 +102,7 @@ public class WeatherModuleApixu extends WeatherModule {
                 } // Response.ErrorListener
                 // endregion
         );
+        stringRequest.setShouldCache(false);
         queue.add(stringRequest);
     }
 

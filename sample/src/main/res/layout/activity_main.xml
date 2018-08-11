@@ -291,6 +291,26 @@
                 app:layout_constraintTop_toTopOf="@+id/txtLocationValue"
                 app:srcCompat="@drawable/map_marker" />
 
+            <TextView
+                android:id="@+id/txtStatus"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_status"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtLocation"
+                app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+
+            <TextView
+                android:id="@+id/txtStatusValue"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@android:string/unknownName"
+                app:layout_constraintStart_toStartOf="@+id/txtLocationValue"
+                app:layout_constraintTop_toTopOf="@+id/txtStatus" />
+
         </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>

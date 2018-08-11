@@ -168,6 +168,9 @@ public class Weather {
     public void onWeatherInfoReady(WeatherInfo weatherInfo) {
         Log.d(getClass().getName(), "onWeatherInfoReady");
         if (weatherInfo.isSuccess) {
+            if (weatherInfo.getProvider()==null) {
+                weatherInfo.isSuccess = false;
+            }
             for (WeatherListener listener: listeners) {
                 listener.onWeatherReady(weatherInfo);
             }

@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtHumidityValue;
     private TextView txtWindSpeedValue;
     private TextView txtLocationValue;
+    private TextView txtStatusValue;
 
     private Weather weather;
     private double latitude;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         txtHumidityValue = findViewById(R.id.txtHumidityValue);
         txtWindSpeedValue = findViewById(R.id.txtWindSpeedValue);
         txtLocationValue = findViewById(R.id.txtLocationValue);
+        txtStatusValue = findViewById(R.id.txtStatusValue);
 
         txtLocationValue.setText(latitude + " , " + longitude);
 
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 txtPressureValue.setText(String.format("%.0f", e.getPressure()));
                 txtHumidityValue.setText(String.format("%.0f", e.getHumidity()));
                 txtWindSpeedValue.setText(String.format("%.1f", e.getWindSpeed()));
+                txtStatusValue.setText(e.isSuccess ? R.string.ok_message : R.string.error_message);
             }
         });
         weather.getWeatherInfo(latitude, longitude);

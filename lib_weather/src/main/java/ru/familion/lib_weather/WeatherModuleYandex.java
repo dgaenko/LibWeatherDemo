@@ -117,6 +117,7 @@ public class WeatherModuleYandex extends WeatherModule {
                 return res;
             }
         };
+        stringRequest.setShouldCache(false);
         queue.add(stringRequest);
     }
 
