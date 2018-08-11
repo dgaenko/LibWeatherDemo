@@ -24,7 +24,18 @@
     <string name="apixu_weather_api_key">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
     <string name="yandex_weather_api_key">xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</string>
 ```
-
-strings.example.xml
++ В приложении для получения данных используйте следующий код:
+```java
+        Weather weather = new Weather(this);
+        weather.addWeatherListener(new WeatherListener() {
+            @Override
+            public void onWeatherReady(WeatherInfo e) {
+                Log.d("APP", "" + e.getTemperature());
+                TextView txtTemperature = findViewById(R.id.txtTemperature);
+                txtTemperature.setText(e.getTemperature() + " C");
+            }
+        });
+        weather.getWeatherInfo(latitude, longitude);
+```
 
 <img src="https://github.com/dgaenko/LibWeatherDemo/blob/master/sample/screenshot/main.png" width="350"/>
