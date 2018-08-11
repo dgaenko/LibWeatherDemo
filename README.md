@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("APP", "Wind speed: " + e.getWindSpeed() + "m/s");
             }
         });
+        // получение инфо о погоде в указанном координатами месте
         weather.getWeatherInfo(49.448161, 11.075577);
         
     }
