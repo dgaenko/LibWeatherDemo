@@ -13,4 +13,8 @@
 
 ## Использование
 
+Импортируйте библиотеку как модуль в Ваш проект (File -> New -> Import module...)
+
+strings.example.xml
+
 <img src="https://github.com/dgaenko/LibWeatherDemo/blob/master/sample/screenshot/main.png" width="350"/>
